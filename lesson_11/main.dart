@@ -1,7 +1,7 @@
 import 'dart:io';
 import 'dart:math';
 
-main(List<String> args) async {
+main(List<String> args) {
   // 29-07-2021
 
   // List<int> numbers = [12, 13, 45, 78, 98, 78, 65, 7, 98];
@@ -34,7 +34,17 @@ main(List<String> args) async {
 
   // videoDownload().then((value) => print(value));
 
-  downloadAudio();
+  // print(1);
+  // downloadAudio();
+  // print(2);
+  playAudio();
+}
+
+void playAudio() async {
+  int duration = 220;
+  for (int position = 0; position <= duration; position++) {
+    await Future.delayed(Duration(seconds: 1), () => {stdout.write(".")});
+  }
 }
 
 Future<String> downloadVideo() {
