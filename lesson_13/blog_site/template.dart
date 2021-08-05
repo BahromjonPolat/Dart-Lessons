@@ -54,7 +54,7 @@ String index = """
       </div>
       <a href="/"><i class="fas fa-home"></i><span>Asosiy sahifa</span></a>
       <a href="/contact"><i class="fas fa-address-book"></i><span>Aloqa</span></a>
-      <a href="/about"><i class="fas fa-info-circle"></i><span>O'zimm haqimda</span></a>
+      <a href="/about"><i class="fas fa-info-circle"></i><span>O'zim haqimda</span></a>
      
     </div>
     <!--sidebar end-->
@@ -134,8 +134,8 @@ String contact = """
       </div>
       <a href="/"><i class="fas fa-home"></i><span>Asosiy sahifa</span></a>
       <a href="/contact"><i class="fas fa-address-book"></i><span>Aloqa</span></a>
-      <a href="/about"><i class="fas fa-info-circle"></i><span>O'zimm haqimda</span></a>
-     
+      <a href="/about"><i class="fas fa-info-circle"></i><span>O'zim haqimda</span></a>
+
     </div>
     <!--sidebar end-->
 
@@ -150,13 +150,20 @@ String contact = """
       <div class="card">
         <p>
             <i class="fab fa-instagram"> Instagam</i> <br />
-            <a href="https:instagram.com/bahromjon_polat/" target="_blank">@BahromjonPolat</a>
+            <a href="https://instagram.com/bahromjon_polat/" target="_blank">@BahromjonPolat</a>
         </p>
       </div>
       <div class="card">
         <p>
             <i class="fab fa-telegram"> Telegram</i> <br />
-            <a href="https:t.me/BahromjonPolat" target="_blank">@BahromjonPolat</a>
+            <a href="https://t.me/BahromjonPolat" target="_blank">@BahromjonPolat</a>
+        </p>
+      </div>
+
+      <div class="card">
+        <p>
+            <i class="fab fa-github"> Github</i> <br />
+            <a href="https://github.com/BahromjonPolat" target="_blank">Bahromjon Po'lat</a>
         </p>
       </div>
     </div>
@@ -235,7 +242,7 @@ String about = """
       <div class="card">
         <p>
             <!-- <h1>O'zim haqimda qisqacha</h1> -->
-            Hozirda "Najot Ta'lim" NTMda "Flutter Bootcamp" kursida o'ziyapman. :0
+            Hozirda "Najot Ta'lim" NTMda "Flutter Bootcamp" kursida o'ziyapman. :)
         </p>
       </div>
     </div>
