@@ -2,7 +2,11 @@ main() {
   // Lesson 3: 14-07-2021 Functions
 
   bigBro:
-  while (1 < 2) while (true) if (1 == 1) break bigBro;
+  while (1 < 2) 
+    while (true)
+      if (1 == 1)
+        
+        break bigBro;
 
   var a = add();
   print(a);
@@ -35,7 +39,7 @@ int addTwoNumbers(int a, int b) {
   return a + b;
 }
 
-// fat arrow functions
+// fat arrow functions or Arrow Syntax
 
 button(bool isClicked) => (isClicked) ? "clicked" : "not clicked";
 isEven(int num) => (num % 2 == 0) ? true : false;

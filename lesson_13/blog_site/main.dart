@@ -2,7 +2,7 @@ import 'dart:io';
 import 'template.dart';
 
 main() {
-  HttpServer.bind("172.16.2.48", 8080).then((HttpServer server) {
+  HttpServer.bind("10.10.13.92", 8080).then((HttpServer server) {
     print("Server was worked!");
     
     server.listen((HttpRequest request) {
@@ -25,4 +25,5 @@ main() {
       response.close();
     });
   });
+
 }
