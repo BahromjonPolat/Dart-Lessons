@@ -1,15 +1,16 @@
-import 'dart:convert';
 import 'dart:io';
 
 main(List<String> args) {
-  new HttpClient()
-      .get("10.10.13.92", 47010, '/index.html')
-      .then((request) => request.close()
-      .then((respone) {
-            respone.transform(utf8.decoder).listen((content) {
+  HttpServer.bind("192.168.2.27", 8080).then((server) {
+    print("Server was connected!");
+    server.listen((request) {
+      HttpResponse response = request.response;
 
-          
+      print("Connected: ${request.connectionInfo!.remoteAddress.address}");
 
-            });
-          }));
+      response.headers.contentType = ContentType.html;
+      response.write("Hello");
+      response.close();
+    });
+  });
 }

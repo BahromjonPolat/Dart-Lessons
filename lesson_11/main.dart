@@ -37,7 +37,8 @@ main(List<String> args) {
   // print(1);
   // downloadAudio();
   // print(2);
-  playAudio();
+  // playAudio();
+  // workSync();
 }
 
 void playAudio() async {
