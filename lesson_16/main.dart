@@ -2,7 +2,7 @@ import 'dart:math';
 import 'pupil.dart';
 import 'car.dart';
 
-main(){
+main() {
   // 10 ta sonni numbers o'zgaruvchisiga qo'shib beradi.
   List<int> numbers = List.generate(10, (index) => index + 10);
 
@@ -26,14 +26,15 @@ main(){
       (index) =>
           new Car(getRandomCarName(), getRandomColor(), getRandomPrice()));
 
-  cars.forEach((element) => print(element));
+  // cars.forEach((element) => print(element));
+
 }
 
 // Random son return qiladigan funksiya.
 int inputRandomNumber() => 1 + Random().nextInt(60);
 
-// Random narx return qiladigan fuunksiya
-int getRandomPrice() => (10 + Random().nextInt(90) - 9) * 1000;
+// Random narx return qiladigan funksiya
+int getRandomPrice() => (10 + Random().nextInt(90 - 9)) * 1000;
 
 // Avtomobil nomlarini random shaklda return qiladi.
 String getRandomCarName() {
@@ -64,7 +65,7 @@ String getRandomColor() {
     "Grey",
     "Yellow"
   ];
-  
+
   // Ranglar ikki marta ketma-ket bo'lib qolmasligi uchun uni tekshirib olamiz.
   while (true) {
     int index = Random().nextInt(colors.length);
@@ -76,5 +77,3 @@ String getRandomColor() {
 
   return colors[rand];
 }
-
-
