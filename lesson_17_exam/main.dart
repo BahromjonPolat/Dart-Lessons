@@ -1,7 +1,6 @@
 main() {
   // Bahromjon Ergashboyev
 
-  /*
   // 1-masala
   print(showFizzBuzz(110));
 
@@ -30,9 +29,6 @@ main() {
 
   // 8-masala: Get letter count.
   print(getLetterCount("AnanaslAr", "a"));
-
-  */
-  
 }
 
 // 1-masala: FizzBuzz
