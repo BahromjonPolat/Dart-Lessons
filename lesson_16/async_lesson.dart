@@ -13,7 +13,9 @@ main() async {
   value = await fun3(10);
   print(value);
   // showFuture();
-  downloadMovie();
+  // downloadMovie();
+
+
 }
 
 void showFuture() {
@@ -39,4 +41,16 @@ void downloadMovie() async {
       });
     });
   }).then(print);
+}
+
+void getData() async {
+  var data = new Future.value("Data").then((v1) {
+    return new Future.value("$v1.").then((v2) {
+      return new Future.value("$v2.").then((v3) {
+        return new Future.value("$v3.");
+      });
+    });
+  }).then(print);
+
+  
 }

@@ -1,6 +1,6 @@
 main() {
   // Bahromjon Ergashboyev
-
+/*
   // 1-masala
   print(showFizzBuzz(110));
 
@@ -29,6 +29,7 @@ main() {
 
   // 8-masala: Get letter count.
   print(getLetterCount("AnanaslAr", "a"));
+  */
 }
 
 // 1-masala: FizzBuzz
@@ -85,6 +86,9 @@ reverseArray(List list) {
 bool hasSecretWord(String word, String secret) {
   if (word.indexOf(secret) != -1) return true;
   return false;
+
+  // Ikkinchi usul
+  // return word.contains(secret);
 }
 
 // 7-masala: Range
